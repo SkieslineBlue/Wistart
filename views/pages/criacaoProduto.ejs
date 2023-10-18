@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/criacaoProduto.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://kit.fontawesome.com/b023fbb394.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="img/logo_novo-2 (2).ico" type="image/x-icon">
+    <title>Postar produto</title>
+</head>
+
+<body>
+    <header>
+        <div class="alin">
+            <a onclick="window.location='/home'" class="wistart">WISTART</a>
+        </div>
+        </div>
+        <div class="main">
+            <header>
+                <header class="cd-header">
+                    <div class="header-wrapper">
+                        <div class="logo-wrap">
+
+                        </div>
+                        <div class="nav-but-wrap">
+                            <div class="menu-icon hover-target">
+                                <div class="menu-icon__line menu-icon__line-left"></div>
+                                <div class="menu-icon__line"></div>
+                                <div class="menu-icon__line menu-icon__line-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </header>
+            <div class="nav">
+                <div class="nav__content">
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a onclick="window.location='/home'" class="hover-target">Inicio</a>
+                        </li>
+                        <li class="nav__list-item"><a onclick="window.location='/perfil'"
+                                class="hover-target">Perfil</a></li>
+                        <li class="nav__list-item"><a onclick="window.location='/comunidade'"
+                                class="hover-target">Comunidades</a>
+                        </li>
+                        <li class="nav__list-item active-nav"><a onclick="window.location='/mercado'"
+                                class="hover-target">Loja</a>
+                        </li>
+                        <li class="nav__list-item"><a onclick="window.location='/login'" class="hover-target">Sair</a>
+                        </li>
+                        <li class="nav__list-item"> <i class='bx bxs-cart' id="cart-icon"></i>
+                        <li class="nav__list-item"><button id="cadas_btn"
+                                onclick="window.location='/login'">Cadastre-se</button></a></li>
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class='cursor' id="cursor"></div>
+            <div class='cursor2' id="cursor2"></div>
+            <div class='cursor3' id="cursor3"></div>
+    </header>
+
+
+    <div class="carti">
+        <h2 class="cart-title">Seu carrinho</h2>
+        <div class="cart-content">
+
+
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">R$0</div>
+        </div>
+        <button type="button" class="btn-buy">Compre agora</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+    </header>
+    <div class="container">
+        <h2>Postar Produto</h2>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="product-name">Nome do Produto:</label>
+                <input type="text" id="product-name" name="product-name" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Categoria:</label>
+                <select id="category" name="category">
+                    <option value="eletronics">Jogos</option>
+                    <option value="clothing">Consoles</option>
+                    <option value="furniture">Monitores</option>
+                    <option value="perifericos">Periféricos</option>
+                    <!-- Adicione mais categorias conforme necessário -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="value">Valor:</label>
+                <input type="text" id="value" name="value" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Localização:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagem do Produto:</label>
+                <div class="image-upload" onclick="document.getElementById('image-input').click()">
+                    <p>Clique para fazer o upload da imagem</p>
+                    <img id="image-preview" src="#" alt="Imagem do Produto">
+                </div>
+                <input type="file" id="image-input" accept="image/*" style="display: none">
+            </div>
+            <div class="button-container">
+                <button type="submit" onclick="window.location='/mercado'" class="postar">Postar Produto</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        const productForm = document.getElementById("product-form");
+        const imageInput = document.getElementById("image-input");
+        const imagePreview = document.getElementById("image-preview");
+
+        imageInput.addEventListener("change", function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <script src="js/carrinho.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>WISTART<h3>
+
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Inicio</a>
+
+                        <a href="#">Comunidades</a>
+
+                        <a href="#">Loja</a>
+
+                        <a href="#">Perfil</a>
+
+                        <a href="#">Dúvidas</a>
+
+                        <a href="#">Contato</a>
+                    </p>
+
+                    <p class="footer-company-name">Wistart © 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Rua qualquer, 123</span> Cidade qualquer</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>4002-8922</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:suporte@wistart.com">suporte@wistart.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Sobre nós</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+</html>

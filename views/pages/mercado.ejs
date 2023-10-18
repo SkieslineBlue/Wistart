@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <link rel="stylesheet" href="css/mercado.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/b023fbb394.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" href="img/logo_novo-2 (2).ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+      <div class="alin">
+        <a onclick="window.location='/home'" class="wistart">WISTART</a>
+    </div>
+    </div>
+    <div class="main">
+      <header>
+        <header class="cd-header">
+          <div class="header-wrapper">
+            <div class="logo-wrap">
+
+            </div>
+            <div class="nav-but-wrap">
+              <div class="menu-icon hover-target">
+                <div class="menu-icon__line menu-icon__line-left"></div>
+                <div class="menu-icon__line"></div>
+                <div class="menu-icon__line menu-icon__line-right"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </header>
+      <div class="nav">
+        <div class="nav__content">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a onclick="window.location='/home'" class="hover-target">Inicio</a></li>
+            <li class="nav__list-item"><a onclick="window.location='/perfil'" class="hover-target">Perfil</a></li>
+            <li class="nav__list-item"><a onclick="window.location='/comunidade'" class="hover-target">Comunidades</a>
+            </li>
+            <li class="nav__list-item active-nav"><a onclick="window.location='/mercado'" class="hover-target">Loja</a>
+            </li>
+            <li class="nav__list-item"><a onclick="window.location='/login'" class="hover-target">Sair</a></li>
+            <li class="nav__list-item"> <i class='bx bxs-cart' id="cart-icon"></i>
+            <li class="nav__list-item"><button id="cadas_btn"  onclick="window.location='/login'" >Cadastre-se</button></a></li>
+          
+
+
+          </ul>
+
+        </div>
+      </div>
+
+
+
+      <div class='cursor' id="cursor"></div>
+      <div class='cursor2' id="cursor2"></div>
+      <div class='cursor3' id="cursor3"></div>
+  </header>
+
+
+  <div class="carti">
+    <h2 class="cart-title">Seu carrinho</h2>
+    <div class="cart-content">
+
+
+    </div>
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price">R$0</div>
+    </div>
+    <button type="button" class="btn-buy">Compre agora</button>
+    <i class='bx bx-x' id="close-cart"></i>
+  </div>
+  </header>
+
+
+  <div class="img-container">
+    <img src="img/loja/vista-frontal-do-jogador-masculino-com-gamepad-jogando-videogame-na-parede-azul.jpg">
+    <div class="overlay">
+      <h2 class="compre">Compre aqui os produtos <br>para uma melhor <br>jogatina!</h2>
+      <br>
+      <h3 class="anuncie">OU</h3>
+
+      <button id="anuncie" onclick="window.location='/criacaoproduto'">Anuncie aqui</button>
+      <i class='bx bxs-joystick' style='color:#ffffff'></i>
+    </div>
+  </div>
+
+  <section class="shop container">
+    <h2 class="section-title">Confira nossa loja</h2>
+
+    <div class="shop-content">
+      <div class="product-box">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_633579-MLB71371155048_082023-O.webp" alt="" class="product" onclick="window.location='/produto'">
+        <h2 class="product-title" onclick="window.location='/produto'" >PlayStation 2 - Usado</h2>
+        <span class="price" onclick="window.location='/produto'">R$200</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="https://m.media-amazon.com/images/I/71sV-QnV8TL._AC_SX679_.jpg" alt="" class="product">
+        <h2 class="product-title">HEADPHONE GAMER</h2>
+        <span class="price">R$100</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto3.jpg" alt="" class="product">
+        <h2 class="product-title">MOUSE GAMER</h2>
+        <span class="price">R$150</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto4.jpg" alt="" class="product">
+        <h2 class="product-title">MOUSEPAD</h2>
+        <span class="price">R$50</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto5.jpg" alt="" class="product">
+        <h2 class="product-title">CONTROLE PS5</h2>
+        <span class="price">R$300</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto6.jpg" alt="" class="product">
+        <h2 class="product-title">WATCH DOGS - PS4</h2>
+        <span class="price">R$50</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto7.jpg" alt="" class="product">
+        <h2 class="product-title">MICROFONE HYPERX</h2>
+        <span class="price">R$200</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto8.jpg" alt="" class="product">
+        <h2 class="product-title">WEBCAM FULL HD</h2>
+        <span class="price">R$300</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto1.jpg" alt="" class="product">
+        <h2 class="product-title">MONITOR GAMER</h2>
+        <span class="price">R$600</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto2.jpg" alt="" class="product">
+        <h2 class="product-title">HEADPHONE GAMER</h2>
+        <span class="price">R$100</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto3.jpg" alt="" class="product">
+        <h2 class="product-title">MOUSE GAMER</h2>
+        <span class="price">R$150</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto4.jpg" alt="" class="product">
+        <h2 class="product-title">MOUSEPAD</h2>
+        <span class="price">R$50</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto5.jpg" alt="" class="product">
+        <h2 class="product-title">CONTROLE PS5</h2>
+        <span class="price">R$300</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto6.jpg" alt="" class="product">
+        <h2 class="product-title">WATCH DOGS - PS4</h2>
+        <span class="price">R$50</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto7.jpg" alt="" class="product">
+        <h2 class="product-title">MICROFONE HYPERX</h2>
+        <span class="price">R$200</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto8.jpg" alt="" class="product">
+        <h2 class="product-title">WEBCAM FULL HD</h2>
+        <span class="price">R$300</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto1.jpg" alt="" class="product">
+        <h2 class="product-title">MONITOR GAMER</h2>
+        <span class="price">R$600</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto2.jpg" alt="" class="product">
+        <h2 class="product-title">HEADPHONE GAMER</h2>
+        <span class="price">R$100</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto3.jpg" alt="" class="product">
+        <h2 class="product-title">MOUSE GAMER</h2>
+        <span class="price">R$150</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto4.jpg" alt="" class="product">
+        <h2 class="product-title">MOUSEPAD</h2>
+        <span class="price">R$50</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto5.jpg" alt="" class="product">
+        <h2 class="product-title">CONTROLE PS5</h2>
+        <span class="price">R$300</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto6.jpg" alt="" class="product">
+        <h2 class="product-title">WATCH DOGS - PS4</h2>
+        <span class="price">R$50</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+
+      <div class="product-box">
+        <img src="img/loja/produto7.jpg" alt="" class="product">
+        <h2 class="product-title">MICROFONE HYPERX</h2>
+        <span class="price">R$200</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+      <div class="product-box">
+        <img src="img/loja/produto8.jpg" alt="" class="product">
+        <h2 class="product-title">WEBCAM FULL HD</h2>
+        <span class="price">R$300</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+      </div>
+    </div>
+  </section>
+  <button id="anuncie1" onclick="window.location='/criacaoproduto'">Anuncie aqui</button>
+
+  <div class="nume">
+    <h3 id="nume"><1 2 3 ...></h3>
+  </div>
+  <script src="js/carrinho.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/cart.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <h3>WISTART<h3>
+
+                <p class="footer-links">
+                    <a href="#" class="link-1">Inicio</a>
+
+                    <a href="#">Comunidades</a>
+
+                    <a href="#">Loja</a>
+
+                    <a href="#">Perfil</a>
+
+                    <a href="#">Dúvidas</a>
+
+                    <a href="#">Contato</a>
+                </p>
+
+                <p class="footer-company-name">Wistart © 2023</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Rua qualquer, 123</span> Cidade qualquer</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>4002-8922</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:suporte@wistart.com">suporte@wistart.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>Sobre nós</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+            vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
+
+</html>

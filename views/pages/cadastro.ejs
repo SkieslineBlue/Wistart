@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>WISTART - CADASTRO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="css/util.css">
+  <link rel="stylesheet" href="js/cadastro.js" />
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="stylesheet" href="css/termos.css">
+  <script src="https://kit.fontawesome.com/b023fbb394.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="img/logo_novo-2 (2).ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+        <form class="login100-form validate-form" id="cadastroform" action="/cadastro" method="post">
+          <span class="login100-form-title p-b-49">
+            Cadastre-se
+          </span>
+
+          <div class="wrap-input100 validate-input m-b-23" data-validate="É necessário digitar o nome de usuário">
+            <span class="label-input100">Nome de usuário</span>
+            <input class="input100" type="text" name="username" placeholder="Digite seu nome de usuário" id="nome"
+              required>
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="É necessário digitar o email">
+            <span class="label-input100">Email</span>
+            <input class="input100" type="email" name="email" placeholder="Digite seu email" id="email" required>
+            <span class="focus-input100" data-symbol="&#xf190;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-23" data-validate="É necessário digitar sua senha">
+            <span class="label-input100">Senha</span>
+            <input class="input100" type="password" name="username" placeholder="Digite sua senha" id="senha" required>
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="É necessário repetir sua senha">
+            <span class="label-input100">Repita a senha</span>
+            <input class="input100" type="password" name="pass" placeholder="Digite sua senha novamente" id="rsenha"
+              required>
+            <span class="focus-input100" data-symbol="&#xf190;"></span>
+          </div>
+
+          <div class="text-right p-t-8 p-b-31">
+
+          </div>
+
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+
+              <button type="submit" class="login100-form-btn" id="btn" onclick="validarForm()">
+                Cadastrar
+              </button>
+
+            </div>
+          </div>
+
+          <div class="txt1 text-center p-t-54 p-b-20">
+            <span class="esq">
+              Ou entre usando
+            </span>
+          </div>
+
+          <div class="flex-c-m">
+            <a href="#" class="login100-social-item bg1 .sub">
+              <i class="fa fa-facebook"></i>
+            </a>
+
+            <a href="#" class="login100-social-item bg2 .sub">
+              <i class="fa fa-twitter"></i>
+            </a>
+
+            <a href="#" class="login100-social-item bg3 .sub">
+              <i class="fa fa-google"></i>
+            </a>
+          </div>
+
+          <div class="flex-col-c p-t-70">
+            <span class="txt1 p-b-17 esq">
+              Já possui uma conta?
+            </span>
+
+            <a onclick="window.location='/login'" class="entre">Entre</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="dropDownSelect1"></div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="../conexao.js"></script>
+  <script src="js/cadastro.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Termos de uso-->
+
+
+
+
+
+
+</body>
+
+</html>

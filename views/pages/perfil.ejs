@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b023fbb394.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/perfil.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="img/logo_novo-2 (2).ico" type="image/x-icon">
+    <title>Perfil </title>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+
+            <header class="cd-header">
+                <div class="header-wrapper">
+                    <div class="logo-wrap">
+
+                    </div>
+                    <div class="nav-but-wrap">
+                        <div class="menu-icon hover-target">
+                            <div class="menu-icon__line menu-icon__line-left"></div>
+                            <div class="menu-icon__line"></div>
+                            <div class="menu-icon__line menu-icon__line-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="nav">
+                <div class="nav__content">
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a onclick="window.location='/home'" class="hover-target">Inicio</a></li>
+                        <li class="nav__list-item active-nav"><a onclick="window.location='/perfil'"class="hover-target">Perfil</a></li>
+                        <li class="nav__list-item"><a onclick="window.location='/comunidade'" class="hover-target">Comunidades</a></li>
+                        <li class="nav__list-item"><a onclick="window.location='/mercado'"class="hover-target">Loja</a></li>
+                        <li class="nav__list-item"><a onclick="window.location='/login'" class="hover-target">Sair</a></li>
+                        <li class="nav__list-item"><button id="cadas_btn">Cadastre-se</button></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class='cursor' id="cursor"></div>
+            <div class='cursor2' id="cursor2"></div>
+            <div class='cursor3' id="cursor3"></div>
+        </header>
+    </div>
+
+
+
+
+
+
+
+
+
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <img id="imagem-de-fundo" src="img/perfil/background.png" alt="img-avatar"> 
+                <div class="perfil-usuario-avatar">
+                    <img id="imagem-de-fundo1" src="img/perfil/perfil.png" alt="img-avatar1">
+                </div>
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo"> Rafaela_gomes</h3>
+                <p> Life's a game</p>
+                
+            </div>
+            <p class="pronome"> Ela/dela</p>
+
+            <a  onclick="window.location='/perfiledit'" id="editar">Editar perfil</a>
+
+            <div class="perfil-usuario-footer">
+
+                <ul class="lista-dados">
+                    <h3 class="comun">Comunidades</h3>
+                    <li><i class='bx bx-image-alt'></i>Mortal Kombat</i></li>
+                    <li><i class='bx bx-image-alt'></i>League Of legends</i></li>
+                    <li><i class='bx bx-image-alt'></i>Resident Evil</i></li>
+                    <li><i class='bx bx-image-alt'></i>Diablo IV</i></li>
+                </ul>
+                <ul class="lista-dados">
+                    <h3 class="comun">Produtos</h3>
+                    <li><i class='bx bx-image-alt'></i>Mouse hyperx pulsefire dart</i></li>
+                    <li><i class='bx bx-image-alt'></i>Capa para PS5</i></li>
+                    <li><i class='bx bx-image-alt'></i>Monitor Samsung ultrawide</i></li>
+                    <li><i class='bx bx-image-alt'></i>Mousepad speed</i></li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+    </section>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

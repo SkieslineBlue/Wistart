@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b023fbb394.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/perfiledit.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Perfil </title>
+    <link rel="icon" href="img/logo_novo-2 (2).ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+
+            <header class="cd-header">
+                <div class="header-wrapper">
+                    <div class="logo-wrap">
+
+                    </div>
+                    <div class="nav-but-wrap">
+                        <div class="menu-icon hover-target">
+                            <div class="menu-icon__line menu-icon__line-left"></div>
+                            <div class="menu-icon__line"></div>
+                            <div class="menu-icon__line menu-icon__line-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="nav">
+                <div class="nav__content">
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a onclick="window.location='/home'" class="hover-target">Inicio</a></li>
+                        <li class="nav__list-item active-nav"><a onclick="window.location='/perfil'"class="hover-target">Perfil</a></li>
+                        <li class="nav__list-item"><a onclick="window.location='/comunidade'" class="hover-target">Comunidades</a></li>
+                        <li class="nav__list-item"><a onclick="window.location='/mercado'"class="hover-target">Loja</a></li>
+                        <li class="nav__list-item"><a onclick="window.location='/login'" class="hover-target">Sair</a></li>
+                        <li class="nav__list-item"><button id="cadas_btn">Cadastre-se</button></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class='cursor' id="cursor"></div>
+            <div class='cursor2' id="cursor2"></div>
+            <div class='cursor3' id="cursor3"></div>
+        </header>
+    </div>
+
+
+
+
+
+
+
+
+
+<main>
+
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <img id="imagem-de-fundo" src="img/perfil/background.png" alt="img-avatar">
+                <label for="input-imagem" class="upload-icon">
+                    <i class='bx bxs-pencil'></i>
+                </label>
+                <input type="file" id="input-imagem" accept="image/*" onchange="alterarImagemDeFundo()">
+                <div class="perfil-usuario-avatar">
+                    <img id="imagem-de-fundo1" src="img/perfil/perfil.png" alt="img-avatar1">
+                    <label for="input-imagem1" class="upload-icon1">
+                        <i class='bx bxs-pencil'></i>
+                    </label>
+                    <input type="file" id="input-imagem1" accept="image/*" onchange="alterarImagemDeFundo1()">
+                </div>
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+            </div>
+          <div class="edit">
+            <form action="" method="post">
+                <label for="username">Nome de Usuário:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50" required></textarea><br><br>
+                
+                <label for="pronouns">Pronomes:</label><br>
+                <select id="pronouns" name="pronouns">
+                    <option value="Ela/dela">Ela/dela</option>
+                    <option value="Ele/dele">Ele/dele</option>
+                </select><br><br>
+                
+                <input type="submit" value="Alterar" class="alte">
+            </form>
+          </div>
+          <button class="delete-button">
+            <i class="fas fa-trash-alt"></i> Excluir Conta
+          </button>
+            <div class="redes-sociales">
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="js/upload.js"></script>
+    <script src="js/menu.js"></script>
+</main>
+
+
+    
+</body>
+
+</html>
